@@ -1,0 +1,106 @@
+* { box-sizing: border-box; }
+
+body { 
+    margin: 0;
+    background-color: var(--bg);
+ }
+
+html {
+  font-family: 'Roboto Mono','IBM Plex Mono','Space Mono', monospace;
+  font-size: 100%;
+}
+/* Colors */
+:root {
+    --bg: #FFF8C1; /*Background Color*/
+    --title: #C05555; /*Title Color*/
+    --footer: #bedbbb; /*Footer Background*/
+    --text: #59886B; /*(Text)*/
+}
+/* --------------------------------------------------------*/
+/* Header and Logo */
+#logo-img {
+    width: 140px;
+    margin-top: 20px;
+}
+.logo {
+    text-align: center;
+}
+h1 {
+    color: var(--title);
+    font-weight: 700;
+}
+
+span {
+    font-size: .7em;
+}
+
+/* Layout all containers */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation - List Items - Links */
+
+.tool-belt {
+    border-bottom: 3px solid tomato;
+    font-size: 1.1em;
+}
+
+/* Section - Paragraph Style */
+.info {
+    margin-left: 1em;
+}
+
+/* Footer */
+footer {
+    /* background-color: var(--footer); */
+}
+
+.list-two {
+    display: inline-flex;
+}
+
+.ap {
+    border-bottom: 3px solid var(--title);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Media Query */
+@media (max-width: 550px) {
+    /* For a screen < 550px, this CSS will be read */
+    .main-container {
+      max-width: 350px;
+      margin: auto;
+    }
+
+}
+
+@media (min-width: 551px) and (max-width: 999px) {
+    /* For a screen > 550 px and < 1000 px, this CSS will be read */
+    .main-container {
+        max-width: 550px;
+        margin: auto;
+      }
+
+      .footer-list, .nav-list {
+        padding: .8em;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    /* For a screen > 1000px, this CSS will be read */
+    .main-container {
+        max-width: 650px;
+        margin: auto;
+      }
+
+}
+
+#time {
+  border-bottom: 3px solid orange;
+  font-size: 20px;
+}
